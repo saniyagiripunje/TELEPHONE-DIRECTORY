@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Micro+5+Charted&family=Silkscreen:wght@400;700&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jaro:opsz@6..72&family=Jersey+10&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.logo {
+    width: 130px;
+    margin-left: 35px;
+}
+.logotext {
+    color: #f8ce51f9;
+    margin-left: 39px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    font-size: large;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar{
+    width: 200px;
+    height: 100%;
+    background: black;
+    padding: 12px 0;
+}
+.wrapper .sidebar ul li{
+    padding: 17px;
+}
+.button{
+    padding: 7px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 3px;
+    cursor: pointer;
+    background-color: #f8ce51f9;
+    border: 3.3px solid red;
+    width: 160px;
+    border-radius: 9px;
+    font-family: "Black Ops One", system-ui;
+}
+.button:hover {
+    border: 3.3px solid black;
+}
+.wrapper .navbar{
+    width: 100%;
+}
+.wrapper .navbar .header {
+    padding: 40px;
+    background: #94836e89;
+    color: #1e1a1a;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Jersey 25", sans-serif;
+    text-shadow: 2px 2px 5px rgb(105, 55, 48);
+    position: relative;
+}
+.wrapper .navbar .content {
+    color: black;
+    text-align: center;
+    display: flex;
+}
+.photo {
+    width: 1063.5px;
+    height: 550.5px;
+    opacity: 0.4;
+}
+.wrapper .navbar .content .table-container {
+    margin: 0px;
+    height: 500px;
+    color: black;
+    text-align: center;
+    font-family:"Jaro", sans-serif;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+.table-container {
+    max-height: 480px;
+    overflow-y: scroll;
+}
+.table-container::-webkit-scrollbar {
+    display: none;
+}
+table, tr ,th, td{
+    border: 3px solid #000;
+    border-collapse: collapse;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.table-container.active {
+    display: block;
+}
+.footer {
+    background-color: #111;
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.icons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.8;
+}
+.icons a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+.icons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+.footerNav {
+    margin: 30px 0;
+}
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+}
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p {
+    color: white;
+}
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 500px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .logo {
+        width: 80px;
+        margin-left: 45px;
+    }
+    .logotext {
+        font-size: small;
+        margin-left: 36px;
+    }
+    .button {
+        width: 130px;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .photo {
+        height: 537.5px;
+        width: 313px;
+    }
+    .wrapper .navbar .content .table-container {
+        margin-left: 50px;
+        width: 200px;
+    }
+    .container-fluid {
+        width: 250px;
+    }
+    .wrapper .navbar .header {
+        font-size: 40px;
+        padding: 15px;
+        height: 110px;
+    }
+    .tele {
+        width: 23px;
+        height: 23px;
+    }
+}
+
